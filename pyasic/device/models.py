@@ -345,6 +345,7 @@ class WhatsminerModels(MinerModelType):
     M59VH30 = "M59 VH30"
     M60SPlusPlusVL30 = "M60S++ VL30"
     M60SPlusPlusVL40 = "M60S++ VL40"
+    M60SPlusPlusVLB0 = "M60S++ VLB0"
     M60SPlusVK30 = "M60S+ VK30"
     M60SPlusVK40 = "M60S+ VK40"
     M60SPlusVK50 = "M60S+ VK50"

@@ -11,3 +11,10 @@ from pyasic.miners.device.models import M60SPlusPlusVL40
 
 class BTMinerM60SPlusPlusVL40(M6X, M60SPlusPlusVL40):
     pass
+
+
+from pyasic.miners.device.models import M60SPlusPlusVLB0
+
+
+class BTMinerM60SPlusPlusVLB0(M6X, M60SPlusPlusVLB0):
+    pass
