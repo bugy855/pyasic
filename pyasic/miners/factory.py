@@ -1025,7 +1025,10 @@ class MinerFactory:
             writer.write(json_cmd)
             await writer.drain()
 
-            resp_len_bytes = await asyncio.wait_for(reader.readexactly(4), timeout=1)
+            resp_len_bytes = await asyncio.wait_for(
+                reader.readexactly(4),
+                timeout=settings.get("btminer_v3_ping_timeout", 1),
+            )
             data = await asyncio.wait_for(
                 reader.readexactly(int.from_bytes(resp_len_bytes, byteorder="little")),
                 timeout=settings.get("factory_get_timeout", 3),
